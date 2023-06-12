@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 17</title>
+</head>
+
+<body>
+    <script>
+        let a, b, c;
+        a = +prompt(" nhập vào số tự nhiên thứ nhất ");
+        b = +prompt(" nhập vào số tự nhiên thứ hai ");
+        c = +prompt(" nhập vào số tự nhiên thứ ba ");
+        let container;
+        // chuyển số bé nhất vào a
+        if (a > b) {
+            container = a;
+            a = b;
+            b = container;
+        }
+
+        if (a > c) {
+            container = a;
+            a = c;
+            c = container;
+        }
+
+        // chuyển số bé nhì vào b
+        if (b > c) {
+            container = b;
+            b = c;
+            c = container;
+        }
+        console.log(+c);
+        console.log(+b);
+        console.log(+a);
+
+  </script>
+
+</body>
+
+</html>

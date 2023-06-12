@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập </title>
+</head>
+
+<body>
+    <script>
+        let a, b, c;
+        a = +prompt("Nhập vào cạnh a: ");
+        b = +prompt("Nhập vào cạnh b: ");
+        c = +prompt("Nhập vào cạnh c: ");
+
+        if (a + b <= c || a + c <= b || b + c <= a) {
+            console.log("Tam giac khong hop le. Xin kiem tra lai");
+
+        }
+        else {
+            console.log("Day la tam giac");
+            if ((a == b) && (b == c)) {
+                console.log("Deu");
+            }
+            else {
+                if (a * a + b * b == c * c || a * c + c * c == b * b || b * b + c * c == a * c) {
+                    console.log("Vuong");
+                }
+                else if (a == b || a == c || b == c) {
+                    console.log("Can");
+                }
+                else {
+                    console.log("Thuong");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 15</title>
+</head>
+
+<body>
+    <script>
+        let soTien, laiSuat, soThang;
+        soTien = +prompt("Nhập vào số tiền gửi ");
+        laiSuat = +prompt("Nhập vào lãi xuất năm ");
+        soThang = +prompt("Nhập vào số tháng gửi ");
+
+        let laiXuatThang = laiSuat / 12;
+        for (let i = 1; i <= soThang; i++) {
+            soTien = soTien + ((soTien / 100) * laiXuatThang);
+        }
+        console.log(soTien);
+    </script>
+
+</body>
+
+</html>

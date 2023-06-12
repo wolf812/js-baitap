@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 19</title>
+</head>
+
+<body>
+    <script>
+        let soCanTim = 0;
+        let n, r;
+        n = +prompt(" nhập vào số tự nhiên ");
+        let soBanDau = n;
+        while (n > 0) {
+            r = n % 10;
+            soCanTim = soCanTim + Math.pow(r,3);
+            n = Math.floor(n / 10);
+        }
+        if (soCanTim === soBanDau) {
+            document.write("Là số Armstrong");
+        } else {
+            document.write("không là số Armstrong");
+
+        }
+
+        //}
+    </script>
+
+</body>
+
+</html>

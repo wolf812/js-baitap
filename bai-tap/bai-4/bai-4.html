@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập </title>
+</head>
+
+<body>
+    <script>
+        let a, b;
+        a = +prompt("Nhập vào 1 số tự nhiên a: ");
+        b = +prompt("Nhập vào 1 số tự nhiên b: ");
+        let phepTinh;
+        phepTinh= prompt("Nhập vào 1 phép tính");
+        let ketQua;
+        switch (phepTinh) {
+            case "+":
+                ketQua = a + b;
+                console.log("a + b = " + ketQua);
+                break;
+            case "-":
+                ketQua = a - b;
+                console.log("a - b = " + ketQua);
+                break;
+            case "*":
+                ketQua = a * b;
+                console.log("a x b = " + ketQua);
+                break;
+            case "/":
+                ketQua = a / b;
+                console.log("a / b = " + ketQua);
+                break;
+            case "%":
+                ketQua = a % b;
+                console.log("a / b có dư là:  " + ketQua);
+                break;
+            default:
+                console.log("Không hợp lệ");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

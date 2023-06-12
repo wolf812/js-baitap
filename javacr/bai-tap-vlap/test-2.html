@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test 2</title>
+</head>
+
+<body>
+    <script>
+    // khai báo biến n và biến tong.
+        let n, tong;
+
+        //gán tổng đầu tiên bằng 0
+        tong = 0;
+
+        // bắt đầu vòng lặp.
+        while (true) {
+            //nhập vào số tự nhiên
+            n = +prompt("Nhập vào các số nguyên dương ");
+
+            //xét số
+            if (n > 0) {
+                // nếu là số dương thì cộng với tổng.
+                tong += n;
+            } else {
+                // nếu không phải số dương, kết thúc vòng lặp
+                break;
+            }
+        }// in ra tỏngo các số đã nhập.
+        alert("Tổng các số vừa nhập = " + tong);
+    </script>
+
+
+</body>
+
+</html>

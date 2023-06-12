@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập </title>
+</head>
+
+<body>
+    <script>
+        let diemHtml, diemCss, diemJs;
+
+        diemHtml = +prompt("Nhập vào số Điểm HTML ");
+        diemCss = +prompt("Nhập vào số Điểm CSS ");
+        diemJs = +prompt("Nhập vào số Điểm JS ");
+        let diemTB;
+        diemTB = (diemHtml + diemCss + diemJs) / 3;
+        if (diemTB < 5) {
+            console.log("Yếu");
+        } else if (diemTB < 6) {
+            console.log("Kém");
+        } else if (diemTB < 7) {
+            console.log("Trung bình");
+        } else if (diemTB < 8) {
+            console.log("Khá");
+        } else if (diemTB < 9) {
+            console.log("Giỏi");
+        } else {
+            console.log("Xuất sắc");
+        }
+
+
+    </script>
+</body>
+
+</html>

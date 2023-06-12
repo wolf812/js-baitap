@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            let age = +prompt("Nhập vào Số tuổi sinh viên");
+            if (!isNaN(age)) {
+                if (age >= 18) {
+                    break;
+
+                } else {
+                    alert("tuổi sinh viên phải lớn hơn 17");
+                }
+
+            } else {
+                alert("Hãy nhập vào số tuổi");
+            }
+        }
+    </script>
+</body>
+
+</html>

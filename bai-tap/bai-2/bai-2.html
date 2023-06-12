@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập </title>
+</head>
+
+<body>
+    <script>
+        let a, b, c;
+        a = +prompt("Nhập vào số thứ nhất: ");
+        b = +prompt("Nhập vào số thứ 2: ");
+        c = +prompt("Nhập vào số thứ 3: ");
+
+
+        /*
+        if (a <= b) {
+            a = b;
+            if (a <= c) {
+                a = c;
+                console.log("số lớn nhất là " + a);
+
+            }
+        }
+
+        if (c >= b) {
+            c = b;
+            if (c >= a) {
+                c = a;
+                console.log("số nhỏ nhất là" + c);
+
+
+            }
+
+
+        }
+        */
+
+
+
+        if (a>=b&&a>=c) {
+            console.log("số lớn nhất là " + a);
+
+            
+        } else if(b>=a &&b>=c) {
+            console.log("số lớn nhất là " + b);
+
+        }else{
+            console.log("số lớn nhất là " + c);
+
+        }
+        
+        if (a<=b&&a<=c) {
+            console.log("số nhỏ nhất là " + a);
+
+            
+        } else if(b<=a &&b<=c) {
+            console.log("số nhỏ nhất là " + b);
+
+        }else{
+            console.log("số nhỏ nhất là " + c);
+
+        }
+
+
+    </script>
+</body>
+
+</html>
